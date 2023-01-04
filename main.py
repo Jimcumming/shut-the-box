@@ -26,7 +26,7 @@ class ShutTheBoxGame:
         combinations = []
         for i in range(len(self.boxes)):
             for j in range(i+1, len(self.boxes)):
-                if self.boxes[i] + self.boxgitges[j] == roll:
+                if self.boxes[i] + self.boxes[j] == roll:
                     combinations.append((self.boxes[i], self.boxes[j]))
             if self.boxes[i] == roll:
                 combinations.append((self.boxes[i],))
